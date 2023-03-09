@@ -1,0 +1,503 @@
+/* banner设计 */
+.banner{
+    height: 500px;
+    background-color: #f5f5f5;
+}
+.banner .wrapper{
+    position: relative;
+    height: 500px;
+    background-image: url(../uploads/banner_1.png);
+}
+.banner .wrapper .left{
+    width: 251px;
+    height: 500px;
+    background-color: rgba(0,0,0,0.8);
+}
+.banner .wrapper .left dl{
+    width: 251px;
+    height: 50px;
+    padding-left: 36px;
+    padding-right: 19px;
+   line-height: 48px;
+}
+.banner .wrapper .left dl:hover{
+    background-color: #27ba9b;
+}
+.banner .wrapper .left dt{
+    margin-right: 15px;
+}
+.banner .wrapper .left dd{
+    margin-right: 5px;
+}
+.banner .wrapper dd,dt{
+    float: left;
+}
+.banner .wrapper dl::before{
+    content:'>';
+    float: right;
+    font-size: 14px;
+    color: #fff;
+}
+ 
+.banner .wrapper a{
+    color: #fff;
+    font-size: 14px;
+}
+ 
+/* 轮播图圆点 */
+.banner .wrapper ol,li{
+    float: right;
+ 
+}
+.banner .wrapper ol{
+    position: absolute;
+    left: 680px;
+    bottom: 31px;
+}
+.banner .wrapper li{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-right: 17px;
+    opacity: 0.43;
+    cursor: pointer;
+}
+.banner .wrapper .current{
+    opacity: 1;
+}
+ 
+/* 左右箭头 */
+.banner .wrapper span{
+    position:absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 22px;
+    background-color: #000;
+    opacity: 0.2;
+    text-align: center;
+    line-height: 55px;
+}
+.banner span.le{
+  left: 260px;
+  top: 228px;
+}
+.banner span.le b{
+    display:inline-block;
+    width: 14px;
+    height: 23px;
+    background-image: url('../images/sprites.png');
+    background-position: 0px -70px;
+}
+.banner span.ri b{
+    display:inline-block;
+    width: 14px;
+    height: 23px;
+    background-image: url('../images/sprites.png');
+    background-position: -40px -70px;
+}
+.banner span.ri{
+    top: 228px;
+    right: 10px;
+}
+
+
+
+
+/*  */
+
+/* 新鲜好物设计 */
+.fresh{
+    margin-top: 48px;
+}
+.fresh .title{
+    height: 29px;
+    line-height: 1;
+}
+.fresh .title h2{
+    float: left;
+    font-size:29px;
+    color: #333;
+    font-weight: 400;
+}
+.fresh .title span{
+    display: block;
+    float: left;
+    margin-top: 11px;
+    margin-left: 34px;
+    color: #999;
+}
+.fresh .title a{
+    display: block;
+    float: right;
+    margin-top: 11px;
+    color: #999;
+}
+.fresh .content{
+    height: 405px;
+    margin-top: 37px;
+}
+.fresh .content img{
+    width: 304px;
+    height: 305px;
+}
+.fresh .content li{
+    float: left;
+    width: 304px;
+    height: 405px;
+    background-color: #f0f9f4;
+    margin-right: 8px;
+    text-align: center;
+}
+.fresh .content li:last-child{
+    margin-right: 0;
+}
+.fresh .content li h3{
+    margin-top: 18px;
+    margin-bottom:13px;
+    font-size: 20px;
+}
+.fresh .content li p{
+    font-size: 23px;
+    color: #9a2e1f;
+}
+.fresh .content li span{
+    font-size: 14px;
+    color: #9a2e1f;
+}
+
+
+/*  */
+
+/* 热门品牌推荐 */
+.brand{
+    
+    height: 466px;
+    background-color: #f5f5f5;
+    margin-top: 55px;
+    padding-top: 42px;
+}
+.brand .title{
+    position: relative;
+    height: 29px;
+    line-height: 29px;
+    margin-bottom: 45px;
+}
+.brand .title h2{
+    float: left;
+    font-size:29px;
+    color: #333;
+    font-weight: 400;
+}
+.brand .title span{
+    display: block;
+    float: left;
+    margin-top: 3px;
+    margin-left: 34px;
+    color: #999;
+}
+.brand .title .singal{
+    width: 52px;
+    height: 20px;
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    /* background-color: green; */
+    line-height: 20px;
+}
+.brand .title .singal span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    margin-right: 12px;
+    text-align: center;
+    background-color: #e2e2e2;
+    color: #fff;
+}
+.brand .title .singal span:last-child{
+    margin-right: 0;
+    background-color: #27ba9b;
+}
+.brand .content{
+    height: 306px;
+}
+.brand .content li{
+    float: left;
+    width: 244px;
+    height: 306px;
+    margin-right: 5px;
+}
+.brand .content li:last-child{
+    margin-right: 0;
+}
+.brand .content li img{
+    width: 244px;
+    height: 306px;
+}
+
+/*  */
+
+/* 生鲜好物 */
+.discuss{
+    height: 725px;
+    /* background-color: yellow; */
+}
+.discuss .title{
+    height: 29px;
+    line-height: 29px;
+    margin-bottom: 45px;
+    margin-top: 34px;
+}
+.discuss .title h2{
+    float: left;
+    font-size:29px;
+    color: #333;
+    font-weight: 400;
+    margin-right: 674px;
+}
+.discuss .title ul,li{
+    float: left;
+    margin-right: 6px;
+}
+.discuss .tit  ul li:last-child{
+    margin-right: 0;
+}
+.discuss .title li a{
+    margin-top: 5px;
+    display: block;
+    height: 20px;
+    padding-left: 7px;
+    padding-right: 7px;
+    line-height: 20px;
+}
+.discuss .title li a:hover{
+    background-color:#27ba9b;
+    color: #fff;
+}
+.discuss .title .all{
+    float: right;
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+.discuss .content{
+    height: 617px;
+    /* background-color: skyblue; */
+}
+.discuss .content .left{
+    float: left;
+    width: 240px;
+    height: 620px;
+    /* background-color: pink; */
+    margin-right: 8px;
+}
+.discuss .content .left img{
+    width: 240px;
+    height: 620px;
+}
+.discuss .content .right{
+    float:left;
+    height: 617px;
+    /* background-color: red; */
+}
+.discuss.content .right ul{float: left;}
+.discuss .content .right li {
+    width: 242px;
+    height: 302px;
+    padding-top: 8px;
+    padding-left: 29px;
+    /* background-color: green; */
+    /* border: solid 2px #27ba9b; */
+    margin-right: 0;
+    margin-right: 8px;
+    margin-bottom:13px;
+}
+.discuss .content .right li:last-child{
+    margin-right: 0;
+}
+.discuss .content .right img{
+    width: 184px;
+    height: 184px;
+} 
+.discuss .content .right p{
+    margin-top: 7px;
+    line-height: 1.3;
+}
+.discuss .content .right .price{
+    margin-top: 8px;
+    font-size: 22px;
+    color: #9a2e1f;
+}
+.discuss .content .right span{
+    font-size: 17px;
+}
+
+/*  */
+/* 联系方式设计 */
+.connection{
+    height: 302px;
+    background-color:#fff;
+    margin-top: 42px;
+}
+.connection .left{
+    float: left;
+    width: 192px;
+    height: 143px;
+    margin-left: 60px;
+    margin-top:79px;
+    /* background-color: pink; */
+    text-align: center;
+}
+.connection .left h2{
+    margin-bottom: 16px;
+    color: #999;
+    font-weight: normal;
+}
+.connection .left a{
+    position: relative;
+    display: block;
+    float: left;
+    width: 93px;
+    height: 92px;
+    border: 1px solid #eeeeee;
+    margin-right: 6px;
+   padding-top: 59px;
+}
+.left span.one{
+    position: absolute;
+    width: 29px;
+    height: 27px;
+    left: 50%;
+    margin-left: -15px;
+    top: 25%;
+    background-image: url('../images/sprites.png');
+    background-position: -250px -70px; 
+}
+.left span.two{
+    position: absolute;
+    width: 29px;
+    height: 28px;
+    left: 50%;
+    margin-left: -15px;
+    top: 25%;
+    background-image: url('../images/sprites.png');
+    background-position: -350px -70px; 
+}
+.connection .left a:last-child{
+    margin-right: 0;
+}
+.connection .middle{
+    width: 193px;
+    height: 143px;
+    float: left;
+    /* background-color: green; */
+    margin-top:79px;
+    margin-left: 118px;
+    text-align: center;
+}
+.connection .middle h2{
+    margin-bottom: 16px;
+    color: #999;
+    font-weight: normal;
+}
+.connection .middle a{
+    position: relative;
+    display: block;
+    float: left;
+    width: 93px;
+    height: 92px;
+    border: 1px solid #eeeeee;
+    margin-right: 6px;
+    padding-top: 59px;
+}
+.connection .middle a:last-child{
+    margin-right: 0;
+}
+.middle span.one{
+    position: absolute;
+    width: 36px;
+    height: 29px;
+    background-image: url('../images/sprites.png');
+    background-position: -204px -14px;
+    left: 50%;
+    top: 20%;
+    margin-left: -18px;
+}
+.middle span.two{
+    position: absolute;
+    width: 36px;
+    height: 29px;
+    background-image: url('../images/sprites.png');
+    background-position: -299px -14px;
+    left: 50%;
+    top: 20%;
+    margin-left: -18px;
+}
+.connection .right{
+    position: relative;
+    width: 241px;
+    height: 156px;
+    float: left;
+    /* background-color: yellow; */
+    margin-top:79px;
+    margin-left: 93px;
+    text-align: center;
+}
+.connection .right h2{
+    margin-bottom: 16px;
+    color: #999;
+    font-weight: normal;
+}
+.connection .right span{
+    position: absolute;
+    float: left;
+    width: 116px;
+    height: 116px;
+    border: 1px solid #f3f3f3;
+    padding: 7px 4px 6px 7px;
+    left: 0px;
+    top: 40px;
+    text-align: center;
+}
+.connection .right p{
+    text-align: left;
+    margin-left: 142px;
+    font-size: 14px;
+    color: #999;
+}
+.connection .right a{
+    display: block;
+    width: 103px;
+    height: 32px;
+    background-color: #27ba9b;
+    margin-left: 138px;
+    margin-top: 16px;
+    line-height: 32px;
+    font-size: 14px;
+    color: #fff;
+}
+.connection .service{
+    width: 160px;
+    height: 122px;
+    float: left;
+    /* background-color: orange; */
+    margin-top:79px;
+    margin-left: 109px;
+    text-align: center;
+}
+.connection .service h2{
+    color: #999;
+    font-weight: normal;
+}
+.connection .service p.one{
+    margin-top: 30px;
+    font-size: 22px;
+    color: #666;
+}
+.connection .service p.two{
+    font-size: 15px;
+    color: #999;
+}
