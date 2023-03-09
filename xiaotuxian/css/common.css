@@ -1,213 +1,242 @@
 /* 版心设计 */
-.wrapper{
-    width: 1240px;
-    margin: 0 auto;
+.wrapper {
+	width: 1240px;
+	margin: 0 auto;
 }
- 
+
 /* 快捷导航设计 */
-.shortcut{
-    background-color: #333;
-    height: 52px;
+.shortcut {
+	background-color: #333;
+	height: 52px;
 }
+
 .shortcut .wrapper ul {
-    float: right;
+	float: right;
 }
-.shortcut .wrapper li{
-    float: left;
-    line-height: 52px;
+
+.shortcut .wrapper li {
+	float: left;
+	line-height: 52px;
 }
-.shortcut .wrapper li a{
-    padding: 0 15px;
-    border-right:1px solid #5a5a5a;
-    font-size: 14px;
-    color: #dcdcdc;
+
+.shortcut .wrapper li a {
+	padding: 0 15px;
+	border-right: 1px solid #5a5a5a;
+	font-size: 14px;
+	color: #dcdcdc;
 }
+
 /* 第一个不设置边框 */
-.shortcut .wrapper li:last-child a{
-    border-right:none;
-    position: relative;
-    padding: 0 33px;
+.shortcut .wrapper li:last-child a {
+	border-right: none;
+	position: relative;
+	padding: 0 33px;
 }
+
 /* 手机图片定位 */
-.shortcut .wrapper li span{
-    position: absolute;
-    left: 13px;
-    top: -1px;
-    width: 11px;
-    height: 16px;
-    background-image: url(../images/sprites.png);
-    background-position: -160px -69px;
+.shortcut .wrapper li span {
+	position: absolute;
+	left: 13px;
+	top: -1px;
+	width: 11px;
+	height: 16px;
+	background-image: url(../images/sprites.png);
+	background-position: -160px -69px;
 }
-.header{
-    height: 70px;
-    /* background-color: pink; */
-    margin: 30px auto;
+
+.header {
+	height: 70px;
+	/* background-color: pink; */
+	margin: 30px auto;
 }
+
 /* header logo */
-.header .logo{
-    float: left;
-    width: 207px;
-    height: 70px;
-    /* background-color: red; */
+.header .logo {
+	float: left;
+	width: 207px;
+	height: 70px;
+	/* background-color: red; */
 }
-.header .logo h1{
-    width: 207px;
-    height: 70px;
+
+.header .logo h1 {
+	width: 207px;
+	height: 70px;
 }
-.header .logo a{
-    display: block;
-    width:207px;
-    height: 70px;
-    background-image: url('../images/logo.png');
-    /* 图片和盒子大小成比例 所以不会留白 */
-    background-size: contain;
-    /* 让文字消失 */
-    font-size: 0;
+
+.header .logo a {
+	display: block;
+	width: 207px;
+	height: 70px;
+	background-image: url('../images/logo.png');
+	/* 图片和盒子大小成比例 所以不会留白 */
+	background-size: contain;
+	/* 让文字消失 */
+	font-size: 0;
 }
- 
- 
+
+
 /* header nav */
-.header .nav{
-    float: left;
-    /* background-color: blue; */
-    margin-left: 40px;
-    margin-top: 23px;
+.header .nav {
+	float: left;
+	/* background-color: blue; */
+	margin-left: 40px;
+	margin-top: 23px;
 }
-.header .nav ul{float: left;}
-.header .nav li{
-    float: left;
-    margin-right: 48px;
+
+.header .nav ul {
+	float: left;
 }
-.header .nav a{
-    padding-bottom: 8px;
+
+.header .nav li {
+	float: left;
+	margin-right: 48px;
 }
-.header .nav li a:hover{
-    color: #27ba9b;
-    border-bottom: 1px solid #27ba9b;
+
+.header .nav a {
+	padding-bottom: 8px;
 }
- 
- 
+
+.header .nav li a:hover {
+	color: #27ba9b;
+	border-bottom: 1px solid #27ba9b;
+}
+
+
 /* header seacher */
-.header .seacher{
-    /* 子绝父相 */
-    position: relative;
-    float: left;
-    width: 172px;
-    height: 30px;
-    /* background-color: orange; */
-    margin-top: 23px;
-    /* 82-48 */
-    margin-left: 34px;
+.header .seacher {
+	/* 子绝父相 */
+	position: relative;
+	float: left;
+	width: 172px;
+	height: 30px;
+	/* background-color: orange; */
+	margin-top: 23px;
+	/* 82-48 */
+	margin-left: 34px;
 }
-.header .seacher input{
-    
-    width: 172px;
-    height: 29px;
-    border-bottom: 1px solid #f4f4f4;
-    padding-left: 31px;
+
+.header .seacher input {
+
+	width: 172px;
+	height: 29px;
+	border-bottom: 1px solid #f4f4f4;
+	padding-left: 31px;
 }
- 
-.header .seacher span{
-    display: block;
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    left: 3px;
-    top: 1px;
-    background-image: url(../images/sprites.png);
-    background-position: -79px -69px;
+
+.header .seacher span {
+	display: block;
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	left: 3px;
+	top: 1px;
+	background-image: url(../images/sprites.png);
+	background-position: -79px -69px;
 }
-.header .seacher input::placeholder{
-    color: #ccc;
-    font-size: 14px;
+
+.header .seacher input::placeholder {
+	color: #ccc;
+	font-size: 14px;
 }
- 
+
 /* header car */
-.header .car{
-    /* 子绝父相 */
-    position: relative;
-    float: right;
-    width: 23px;
-    height: 23px;
-    /* background-color: red; */
-    margin-top: 28px;
-    margin-right: 14px;
-    /* 精灵图 */
-    background-image: url('../images/sprites.png');
-    background-position: -119px -69px;
+.header .car {
+	/* 子绝父相 */
+	position: relative;
+	float: right;
+	width: 23px;
+	height: 23px;
+	/* background-color: red; */
+	margin-top: 28px;
+	margin-right: 14px;
+	/* 精灵图 */
+	background-image: url('../images/sprites.png');
+	background-position: -119px -69px;
 }
-.header .car span{
-    position: absolute;
-    width: 20px;
-    height: 15px;
-    border-radius: 8px;
-    background-color: #e26237;
-    left: 14px;
-    top: -4px;
-    font-size: 13px;
-    color: #fff;
-    text-align: center;
-    line-height: 15px;
+
+.header .car span {
+	position: absolute;
+	width: 20px;
+	height: 15px;
+	border-radius: 8px;
+	background-color: #e26237;
+	left: 14px;
+	top: -4px;
+	font-size: 13px;
+	color: #fff;
+	text-align: center;
+	line-height: 15px;
 }
- 
- 
- 
- 
+
+
+
+
 /* 版权设计 */
-.footer{
-    height: 342px;
-    background-color: #333;
+.footer {
+	height: 342px;
+	background-color: #333;
 }
-.footer .wrapper{
-    width: 1393px;
+
+.footer .wrapper {
+	width: 1393px;
 }
-.footer .top{
-    height: 173px;
-    padding-top: 59px;
-    padding-left: 135px;
-    /* background-color: pink; */
-    border-bottom: 1px solid #434343;
+
+.footer .top {
+	height: 173px;
+	padding-top: 59px;
+	padding-left: 135px;
+	/* background-color: pink; */
+	border-bottom: 1px solid #434343;
 }
-.footer .top ul{
-    float: left;
+
+.footer .top ul {
+	float: left;
 }
-.footer .top li{
-    position: relative;
-    float: left;
-    width: 195px;
-    height: 58px;
-    margin-right: 300px;
-    line-height: 58px;
-    font-size: 28px;
-    color: #fff;
-    /* background-color: red; */
+
+.footer .top li {
+	position: relative;
+	float: left;
+	width: 195px;
+	height: 58px;
+	margin-right: 300px;
+	line-height: 58px;
+	font-size: 28px;
+	color: #fff;
+	/* background-color: red; */
 }
-.footer .top li:last-child{
-    margin-right: 0px;
+
+.footer .top li:last-child {
+	margin-right: 0px;
 }
-.footer .top li::before{
-    position:absolute;
-    left: 0;
-    right: 0;
-    content: ' ';
-    width: 58px;
-    height: 58px;
-    background-image: url('../images/sprites.png');
-    vertical-align: middle; 
-}.footer .top li span{
-    margin-left: 77px;
+
+.footer .top li::before {
+	position: absolute;
+	left: 0;
+	right: 0;
+	content: ' ';
+	width: 58px;
+	height: 58px;
+	background-image: url('../images/sprites.png');
+	vertical-align: middle;
 }
-.footer .bottom{
-    margin-top: 42px;
-    text-align: center;
+
+.footer .top li span {
+	margin-left: 77px;
 }
-.footer .bottom p:last-child{
- 
-    color: #999;
-    font-size: 14px;
-    margin-top: 15px;
+
+.footer .bottom {
+	margin-top: 42px;
+	text-align: center;
 }
-.footer .bottom a{
-    color: #999;
-    font-size: 14px;
+
+.footer .bottom p:last-child {
+
+	color: #999;
+	font-size: 14px;
+	margin-top: 15px;
+}
+
+.footer .bottom a {
+	color: #999;
+	font-size: 14px;
 }
